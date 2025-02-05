@@ -9,9 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var actionBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nameLabel.textColor = .red
+        actionBtn.setTitle("(??", for: .normal)
+    }
+
+    @IBAction func onButtonClicked(_ sender: Any) {
+        print("Click detected")
     }
 
 
